@@ -28,16 +28,6 @@ streamlit run app.py
 - **Threshold:** chosen from out-of-fold predictions to maximise F1 on the "bad" class, since the classes are imbalanced (~30% bad).
 - **Explainability:** SHAP `TreeExplainer` – global (bar + beeswarm) and per-applicant (waterfall).
 
-## Results
-Fill in after training (see `artifacts/metrics.json`):
-
-| Model | CV ROC-AUC |
-|---|---|
-| Logistic Regression (baseline) | |
-| Random Forest (tuned) | |
-| Gradient Boosting (tuned) | |
-
-Test ROC-AUC / PR-AUC / F1: _add yours_
 
 ## Deploy on Streamlit Community Cloud (free)
 1. Run `python -m src.train`, then push the whole folder (including `artifacts/`) to a public GitHub repo.
